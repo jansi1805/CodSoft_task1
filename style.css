@@ -1,0 +1,273 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5; /* light pink background */
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffb6c1; /* soft pink */
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.logo span {
+  color: #fff5f5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(to right, #ffe4e1, #fff0f5);
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #d63384;
+}
+
+.hero-text span {
+  color: #e75480;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  flex: 1;
+  padding: 1rem;
+}
+
+.hero-img img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c2185b;
+}
+
+.scroll-down {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* About Section */
+.about-section {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-img img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+  color: #d63384;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.about-list li {
+  margin-bottom: 0.5rem;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 4rem 0;
+  background-color: #fff0f5;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-box {
+  background-color: #ffe4e1;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #d63384;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: scale(1.05);
+  background-color: #f8bbd0;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #ffe4e1;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem;
+  color: #c2185b;
+}
+
+.project-tag {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #f8bbd0;
+  color: #c2185b;
+  padding: 0.2rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 0;
+  background-color: #fff0f5;
+}
+
+.contact-content p {
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+.contact-info a {
+  color: #d63384;
+  text-decoration: underline;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Footer */
+.footer {
+  background-color: #ffb6c1;
+  padding: 1rem 0;
+  text-align: center;
+  color: white;
+}
